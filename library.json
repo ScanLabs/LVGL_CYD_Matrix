@@ -1,0 +1,26 @@
+{
+    "name": "LVGL_CYD_Matrix",
+    "version": "1.0.0",
+    "description": "Simulate Matrix movie effect on CYD via LVGL_CYD",
+    "keywords": "Matrix, CYD, LVGL, TFT, Touch",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/scanlabs/LVGL_CYD_Matrix"
+    },
+    "authors": [
+      {
+        "name": "ScanLabs",
+        "email": "paolo.scanniffio@scanlabs.it",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": "esp32",
+    "dependencies": {
+        "LVGL_CYD": "^1.2.2"
+        "ropg/spi_lcd_read": "^1.0.0",
+        "TFT_eSPI": "^2.5.43",
+        "LVGL": "^9.2.2"
+    }
+}

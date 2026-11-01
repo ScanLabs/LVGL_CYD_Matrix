@@ -1,0 +1,14 @@
+ScanLabsCYDMatrixEffect
+
+Copyright (c) 2026 ScanLabs
+
+Permission is granted to use, copy, modify and distribute this
+software for commercial and non-commercial purposes, provided that
+this copyright notice and attribution to ScanLabs are retained in
+all copies and derivative works.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+Author: ScanLabs
