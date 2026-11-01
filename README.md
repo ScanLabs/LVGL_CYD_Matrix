@@ -1,6 +1,6 @@
-# LVGL\_CYD\_Matrix
+# LVGL_CYD_Matrix
 
-A lightweight Matrix digital rain effect library for ESP32 Cheap Yellow Display (CYD) boards using LVGL 9 and LVGL\_CYD.
+A lightweight Matrix digital rain effect library for ESP32 Cheap Yellow Display (CYD) boards using LVGL 9 and LVGL_CYD.
 
 The library reproduces the classic "Matrix" falling character effect and allows secret messages to appear dynamically within the animation.
 
@@ -30,7 +30,7 @@ The library reproduces the classic "Matrix" falling character effect and allows 
 * Arduino IDE
 * ESP32 Arduino Core
 * LVGL 9.x
-* LVGL\_CYD
+* LVGL_CYD
 
 \---
 
@@ -47,7 +47,7 @@ Final structure:
 ```text
 Arduino
 └── libraries
-    └── LVGL\_CYD\_Matrix
+    └── LVGL_CYD_Matrix
         ├── src
         ├── examples
         ├── LICENSE
@@ -69,7 +69,7 @@ ScanLabsCYDMatrixEffect matrix;
 void setup()
 {
     matrix.begin(
-        USB\\\_LEFT,
+        USB_LEFT,
         320,
         240,
         40,
@@ -100,10 +100,10 @@ void loop()
 
 ScanLabsCYDMatrixEffect matrix;
 
-uint32\\\_t lastMessageTime = 0;
-uint8\\\_t messageIndex = 0;
+uint32_t lastMessageTime = 0;
+uint8_t messageIndex = 0;
 
-const char\\\* messages\\\[] =
+const char* messages[] =
 {
     "SCANLABS",
     "HELLO WORLD",
@@ -117,7 +117,7 @@ void setup()
     Serial.begin(115200);
 
     matrix.begin(
-        USB\\\_LEFT,
+        USB_LEFT,
         320,
         240,
         40,
@@ -137,7 +137,7 @@ void loop()
         lastMessageTime = millis();
 
         matrix.show(
-            messages\\\[messageIndex],
+            messages[messageIndex],
             5000
         );
 
@@ -186,7 +186,7 @@ matrix.begin(
 
 |Parameter|Description|
 |-|-|
-|rotation|Display orientation (e.g. USB\_LEFT)|
+|rotation|Display orientation (e.g. USB_LEFT)|
 |screenWidth|Screen width in pixels|
 |screenHeight|Screen height in pixels|
 |matrixCols|Number of Matrix columns|
@@ -199,7 +199,7 @@ matrix.begin(
 
 ```cpp
 matrix.begin(
-    USB\\\_LEFT,
+    USB_LEFT,
     320,
     240,
     40,
@@ -268,7 +268,7 @@ void loop()
 
 ```cpp
 matrix.begin(
-    USB\_LEFT,
+    USB_LEFT,
     320,
     240,
     40,
@@ -285,7 +285,7 @@ matrix.begin(
 
 ```cpp
 matrix.begin(
-    USB\_LEFT,
+    USB_LEFT,
     320,
     240,
     30,
@@ -302,7 +302,7 @@ matrix.begin(
 
 ```cpp
 matrix.begin(
-    USB\_LEFT,
+    USB_LEFT,
     320,
     240,
     50,
@@ -380,7 +380,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 # Author
 
-ScanLabs
+ScanLabs Engineering
 
 Created for ESP32 Cheap Yellow Display projects using LVGL.
 
